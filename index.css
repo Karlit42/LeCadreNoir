@@ -1,0 +1,99 @@
+* {
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.901);
+}
+
+header {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 30%;
+}
+
+.cadre {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.337);
+    height: 90vh;
+    width: 95%;
+    background: #121212; 
+    background: linear-gradient(
+      135deg,
+      #121212 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      #121212 50%,
+      #121212 75%,
+      #1a1a1a 75%,
+      #1a1a1a
+    );
+    background-size: 40px 40px;
+    animation: move 4s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+
+h1 {
+    margin-bottom: 0;
+}
+
+header p {
+    margin: 0;
+}
+  
+li, ul {
+    list-style: none;
+    padding: 0.4rem 0;
+}
+
+a {
+    color: white;
+    padding: 0.3rem 0;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+a:hover {
+    color: rgba(157, 157, 157, 0.856);
+}
+
+form {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    margin-top: 3rem;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
