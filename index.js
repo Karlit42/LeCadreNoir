@@ -1,19 +1,19 @@
-// // Définir la vitesse de défilement (en millisecondes)
-// const scrollSpeed = 20;
+const redBtn = document.getElementById('red_mode');
 
-// // Fonction de défilement automatique
-// function scrollDown() {
-//   // Vérifier si le bas de la page a été atteint
-//   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-//     // Si c'est le cas, arrêter le défilement automatique
-//     clearInterval(scrollInterval);
-//   } else {
-//     // Sinon, faire défiler la page vers le bas
-//     window.scrollBy(0, 10);
-//   }
-// }
+const cadre = document.querySelector('.cadre_noir');
 
-// // Appeler la fonction de défilement automatique à intervalles réguliers
-// var scrollInterval = setInterval(scrollDown, scrollSpeed);
+const isRed = localStorage.getItem('isRed');
+
+if (isRed === true) {
+    cadre.classList.toggle('cadre_rouge');
+}
+
+redBtn.addEventListener('click', function() {
+    console.log('wesh');
+    cadre.classList.toggle('cadre_rouge');
+    cadre.classList.toggle('cadre_noir');
+    redBtn.classList.toggle('redButton');
+});
+    
 
  
