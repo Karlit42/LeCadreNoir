@@ -23,8 +23,11 @@ header {
 }
 
 main {
-    width: 50%;
     text-align: justify;
+}
+
+img {
+  width: 10rem;
 }
 
 .cadre_noir {
@@ -94,20 +97,22 @@ header p {
     margin: 0;
 }
   
-li, ul {
+ul {
     list-style: none;
     padding: 0.4rem 0;
+    display: inline-block;
 }
 
-a {
+li {
     color: white;
-    padding: 0.3rem 0;
+    padding: 0.6rem 0;
     text-decoration: none;
     transition: color 0.4s;
 }
 
-a:hover {
-    color: rgba(157, 157, 157, 0.856);
+li:hover {
+    color: rgba(98, 98, 98, 0.856);
+    cursor: pointer;
 }
 
 form {
@@ -126,7 +131,7 @@ input, textarea {
 }
 
 .container {
-    margin-top: 10rem;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,21 +139,28 @@ input, textarea {
 
 button {
     position: fixed;
-    left: -20px;
-    bottom: 10%;
+    left: -35px;
+    bottom: 15%;
     transform: rotate(270deg);
     color: #5a2f2f;
     border: 0;
     transition: background-color 0.5s ease;
 }
 
+button:hover, .redButton:hover {
+  cursor: pointer;
+}
+
 .redButton {
     position: fixed;
-    left: -20px;
-    bottom: 10%;
+    left: -35;
+    bottom: 15%;
     transform: rotate(270deg);
     color: white;
     background-color: #5a2f2f;
     border: 0;
 }
 
+.hidden {
+  display: none;
+}
