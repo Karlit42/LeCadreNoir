@@ -3,12 +3,19 @@
     letter-spacing: 3px;
 }
 
+#intro {
+  position: fixed;
+  left: 50%;
+  top: 50vh;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Courier New", monospace;
     margin: 0;
+    padding: 0;
     height: 100vh;
     color: white;
     background-color: rgba(0, 0, 0, 0.901);
@@ -29,6 +36,8 @@ main {
 img {
   width: 10rem;
 }
+
+
 
 .cadre_noir {
     display: flex;
@@ -139,8 +148,8 @@ input, textarea {
 
 button {
     position: fixed;
-    left: -35px;
-    bottom: 15%;
+    left: -2%;
+    bottom: 12%;
     transform: rotate(270deg);
     color: #5a2f2f;
     border: 0;
@@ -153,8 +162,8 @@ button:hover, .redButton:hover {
 
 .redButton {
     position: fixed;
-    left: -35;
-    bottom: 15%;
+    left: -2%;
+    bottom: 12%;
     transform: rotate(270deg);
     color: white;
     background-color: #5a2f2f;
