@@ -1,12 +1,17 @@
-// const page = document.getElementById('page');
-// // const intro = document.getElementById('intro');
+const portrait = document.getElementById('portrait');
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   setTimeout(function () {
-//       page.classList.remove('hidden');
-//       // intro.classList.add('hidden');
-//   }, 2000);
-// });
+document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(function () {
+      portrait.classList.add('hidden');
+  }, 500);
+  setTimeout(function () {
+    portrait.classList.remove('hidden');
+}, 500);
+setTimeout(function () {
+  portrait.classList.add('hidden');
+}, 500);
+
+});
 
 const redBtn = document.getElementById('red_mode');
 

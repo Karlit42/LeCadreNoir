@@ -3,12 +3,6 @@
     letter-spacing: 2px;
 }
 
-/* #intro {
-  position: fixed;
-  left: 50%;
-  top: 50vh;
-} */
-
 body {
     display: flex;
     align-items: center;
@@ -38,11 +32,7 @@ img {
   width: 10rem;
 }
 
-.contact {
-  
-}
-
-.portrait {
+#portrait {
   position: fixed;
 }
 
@@ -53,6 +43,7 @@ img {
   height: 90vh;
   width: 95%;
 }
+
 .cadre_noir {
     background: #121212; 
     background: linear-gradient(
@@ -174,6 +165,8 @@ button:hover, .redButton:hover {
 section {
   text-align: right;
   margin-right: 2rem;
+
+
 }
 
 span {
@@ -215,7 +208,6 @@ a:hover {
 
 @media screen and (max-width: 576px) {
   button, .redbutton {
-    transform: rotate(0deg);
     left: 25%;
     bottom: 0;
   }
