@@ -4,13 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(function () {
       portrait.classList.add('hidden');
   }, 500);
-  setTimeout(function () {
-    portrait.classList.remove('hidden');
-}, 500);
-setTimeout(function () {
-  portrait.classList.add('hidden');
-}, 500);
-
 });
 
 const redBtn = document.getElementById('red_mode');

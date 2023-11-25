@@ -30,6 +30,7 @@ main {
 
 img {
   width: 10rem;
+  border: 1px solid white;
 }
 
 #portrait {
@@ -184,6 +185,10 @@ a:hover {
   color: rgba(98, 98, 98, 0.856);
 }
 
+.contact a {
+  margin-bottom: 4rem;
+}
+
 
 @media screen and (max-width: 1200px) {
   button, .redbutton {
@@ -197,6 +202,10 @@ a:hover {
     left: -4%;
     bottom: 12%;  
   }
+  .cadre_noir, .cadre_rouge {
+    height: 95vh;
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -204,14 +213,27 @@ a:hover {
     left: -5%;
     bottom: 15%;
   }
+  .cadre_noir, .cadre_rouge {
+    height: 97vh;
+    width: 95%;
+  }
+
+  .cadre_noir, .cadre_rouge {
+    height: 96vh;
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 576px) {
   button, .redbutton {
-    left: 25%;
-    bottom: 0;
+    display: none;
   }
-}
+  
+  .cadre_noir, .cadre_rouge {
+    height: 97vh;
+    width: 95%;
+  }
+} 
 
 
 
