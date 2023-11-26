@@ -154,14 +154,11 @@ transition: background-color 0.5s ease;
 .redButton {
 color: white;
 background-color: #5a2f2f;  
-
 }
-
-
 
 button:hover, .redButton:hover {
 cursor: pointer;
-opacity: 0.5;
+opacity: 0.9;
 }
 
 .hidden {
@@ -215,7 +212,6 @@ margin-bottom: 3rem;
   header {
     margin: 0 1rem 0.5rem 1rem;
     width: 100%;
- 
   }
 
 button, .redButton {
@@ -240,7 +236,7 @@ button, .redButton {
 
 
 .cadre_noir, .cadre_rouge {
-  height: auto;
+  height: 100%;
   width: 95%;
 }
 
