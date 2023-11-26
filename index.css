@@ -245,7 +245,7 @@ button, .redButton {
 }
 
 .cadre_noir, .cadre_rouge {
-  height: auto;
+  height: 150vh;
 }
 
 } 

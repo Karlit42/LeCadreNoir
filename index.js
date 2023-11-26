@@ -3,7 +3,7 @@ const portrait = document.getElementById('portrait');
 document.addEventListener('DOMContentLoaded', function () {
   setTimeout(function () {
       portrait.classList.add('hidden');
-  }, 500);
+  }, 2000);
 });
 
 const redBtn = document.getElementById('red_mode');
