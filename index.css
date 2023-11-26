@@ -222,6 +222,7 @@ button, .redButton {
   top: 17%;
   height: 120px;
   width: 20px;
+  writing-mode: vertical-rl;   }
 }
 
 
