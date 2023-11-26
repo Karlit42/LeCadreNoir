@@ -1,238 +1,253 @@
 * {
-    font-weight: lighter;
-    letter-spacing: 2px;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Courier New", monospace;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.901);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.901);
 }
 
 header {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 50%;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
 }
 
 main {
-  height: 100%;
+height: 100%;
 
 }
 
 img {
-  width: 10rem;
-  border: 1px solid white;
+width: 20rem;
+border: 1px solid white;
 }
 
 #portrait {
-  position: fixed;
+position: fixed;
 }
 
 .cadre_noir, .cadre_rouge {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(255, 255, 255, 0.337);
-  height: 90vh;
-  width: 95%;
+display: flex;
+flex-direction: column;
+border: 1px solid rgba(255, 255, 255, 0.337);
+height: 90vh;
+width: 95%;
 }
 
 .cadre_noir {
-    background: #121212; 
-    background: linear-gradient(
-      135deg,
-      #121212 25%,
-      #1a1a1a 25%,
-      #1a1a1a 50%,
-      #121212 50%,
-      #121212 75%,
-      #1a1a1a 75%,
-      #1a1a1a
-    );
-    background-size: 40px 40px;
-    animation: move 4s linear infinite;  
-  }
-  
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 40px 40px;
-    }
-  }
+  background: #121212; 
+  background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+  );
+  background-size: 40px 40px;
+  animation: move 4s linear infinite;  
+}
 
-  .cadre_rouge {
-    background: #bfbfbf; 
-    background: linear-gradient(
-      135deg,
-      #121212 25%,
-      #5a2f2f 25%,
-      #5a2f2f 50%,
-      #121212 50%,
-      #121212 75%,
-      #5a2f2f 75%,
-      #5a2f2f
-    );
-    background-size: 40px 40px;
-    animation: move 4s linear infinite;
-    
+@keyframes move {
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+.cadre_rouge {
+  background: #bfbfbf; 
+  background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #5a2f2f 25%,
+    #5a2f2f 50%,
+    #121212 50%,
+    #121212 75%,
+    #5a2f2f 75%,
+    #5a2f2f
+  );
+  background-size: 40px 40px;
+  animation: move 4s linear infinite;
   
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 40px 40px;
-    }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 40px 40px;
+  }
+}
 
 h1 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 header p {
-    margin: 0;
+  margin: 0;
 }
-  
+
 ul {
-    list-style: none;
-    padding: 0.4rem 0;
-    display: inline-block;
+  list-style: none;
+  padding: 0.4rem 0;
+  display: inline-block;
 }
 
 li {
-    color: white;
-    padding: 0.6rem 0;
-    text-decoration: none;
-    transition: color 0.4s;
+  color: white;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  transition: color 0.4s;
 }
 
 li:hover {
-    color: rgba(98, 98, 98, 0.856);
-    cursor: pointer;
-}
-
-form {
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-label {
-    margin-top: 3rem;
-}
-
-input, textarea {
-    width: 100%;
-}
-
-button, .redButton {
-  position: fixed;
-  transform: rotate(270deg);
-  border: 0;
-  left: -2%;
-  bottom: 12%;
-}
-
-button {
-    color: #5a2f2f;
-    transition: background-color 0.5s ease;
-}
-
-.redButton {
-    color: white;
-    background-color: #5a2f2f;  
-}
-
-button:hover, .redButton:hover {
+  color: rgba(98, 98, 98, 0.856);
   cursor: pointer;
 }
 
+form {
+margin-top: 10rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+label {
+margin-top: 3rem;
+}
+
+input, textarea {
+width: 100%;
+}
+
+button, .redButton {
+position: fixed;
+writing-mode: vertical-rl;
+border: 0;
+left: 0;
+bottom: 12%;
+
+}
+
+button {
+color: #5a2f2f;
+transition: background-color 0.5s ease;
+}
+
+.redButton {
+color: white;
+background-color: #5a2f2f;  
+
+}
+
+
+
+button:hover, .redButton:hover {
+cursor: pointer;
+opacity: 0.5;
+}
+
 .hidden {
-  display: none;
+display: none;
 }
 
 section {
-  text-align: right;
-  margin-right: 2rem;
+text-align: right;
+margin-right: 1.5rem;
 
 
 }
 
 span {
-  text-decoration: line-through;
+text-decoration: line-through;
 }
 
 a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.4s;
-  display: block;
+color: white;
+text-decoration: none;
+transition: color 0.4s;
+display: block;
 }
 
 a:hover {
-  color: rgba(98, 98, 98, 0.856);
+color: rgba(98, 98, 98, 0.856);
 }
 
 .contact a {
-  margin-bottom: 4rem;
+margin-bottom: 3rem;
+}
+
+#accueilSection p {
+  margin-bottom: 0;
+  margin-top: 0.4rem;
 }
 
 
-@media screen and (max-width: 1200px) {
-  button, .redbutton {
-    left: -4%;
-    bottom: 12%;
-  }
-}
+
 
 @media screen and (max-width: 992px) {
-  button, .redbutton {
-    left: -4%;
-    bottom: 12%;  
-  }
-  .cadre_noir, .cadre_rouge {
-    height: 95vh;
-    width: 95%;
-  }
+
+.cadre_noir, .cadre_rouge {
+  height: 95vh;
+  width: 95%;
+}
 }
 
 @media screen and (max-width: 768px) {
-  button, .redbutton {
-    left: -5%;
-    bottom: 15%;
-  }
-  .cadre_noir, .cadre_rouge {
-    height: 97vh;
-    width: 95%;
+
+  header {
+    margin: 0 1rem 0.5rem 1rem;
+    width: 100%;
+ 
   }
 
-  .cadre_noir, .cadre_rouge {
-    height: 96vh;
-    width: 95%;
-  }
+button, .redButton {
+  position: fixed;
+  border: 0;
+  left: 95%;
+  right: 0;
+  top: 17%;
+  height: 120px;
+  width: 20px;
+}
+
+
+
+.cadre_noir, .cadre_rouge {
+  height: 97vh;
+  width: 95%;
+}
 }
 
 @media screen and (max-width: 576px) {
-  button, .redbutton {
-    display: none;
-  }
-  
-  .cadre_noir, .cadre_rouge {
-    height: 97vh;
-    width: 95%;
-  }
+
+
+.cadre_noir, .cadre_rouge {
+  height: auto;
+  width: 95%;
+}
+
+.cadre_noir, .cadre_rouge {
+  height: auto;
+}
+
 } 
 
 
