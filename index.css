@@ -16,21 +16,23 @@ body {
 }
 
 header {
-  margin: 2rem;
+  /* margin: 2rem; */
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 50%;
+  margin: 2rem;
+
 }
 
 main {
 height: 100%;
-
+width: 100%;
 }
 
 img {
-width: 20rem;
-border: 1px solid white;
+width: 20px;
+background-color: white;
 }
 
 #portrait {
@@ -168,6 +170,7 @@ display: none;
 section {
 text-align: right;
 margin-right: 1.5rem;
+justify-content: flex-end;
 
 
 }
@@ -245,6 +248,12 @@ button, .redButton {
 } */
 
 } 
+
+#page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 
 
