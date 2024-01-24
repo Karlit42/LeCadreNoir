@@ -32,35 +32,38 @@ redBtn.addEventListener('click', () => {
 const accueilBtn = document.getElementById('accueilBtn');
 const projetsBtn = document.getElementById('projetsBtn');
 const contactBtn = document.getElementById('contactBtn');
+const deepBtn = document.getElementById('deepBtn');
 
 const accueilSection = document.getElementById('accueilSection');
 const projetsSection = document.getElementById('projetsSection');
 const contactSection = document.getElementById('contactSection');
+const deepSection = document.getElementById('deepSection');
 
 
 function masquerToutesLesSections() {
     accueilSection.classList.add('hidden');
     projetsSection.classList.add('hidden');
     contactSection.classList.add('hidden');
-    accueilBtn.innerHTML = 'Accueil';
-    projetsBtn.innerHTML = 'Projets';
-    contactBtn.innerHTML = 'Contact';
+    deepSection.classList.add('hidden');
   };
 
 accueilBtn.addEventListener('click', function () {
     masquerToutesLesSections();
     accueilSection.classList.remove('hidden');
-    accueilBtn.innerHTML = '&#8861;';
 });
 
 projetsBtn.addEventListener('click', function () {
     masquerToutesLesSections();
     projetsSection.classList.remove('hidden');
-    projetsBtn.innerHTML = '&#8861;';
 });
 
 contactBtn.addEventListener('click', function () {
     masquerToutesLesSections();
     contactSection.classList.remove('hidden');
-    contactBtn.innerHTML = '&#8861;';
 });
+
+deepBtn.addEventListener('click', function () {
+  masquerToutesLesSections();
+  deepSection.classList.remove('hidden');
+});
+
